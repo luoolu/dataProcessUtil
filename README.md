@@ -1,19 +1,24 @@
 # dataProcessUtil
-this repository focus on data process 
-## 1. batch rename files
+#### this repository focus on data process 
 
-## 2. image augmented
+-- 1. batch rename files
 
-## 3. jpg to png
+-- 2. image augmented
 
-## 4. png to jpg
+-- 3. jpg to png
 
-## 5. tif to jpg
+-- 4. png to jpg
 
-## 6. tif to png
+-- 5. tif to jpg
 
-## 7. create folder
+-- 6. tif to png
 
-## 8. split folder
+-- 7. create folder
 
-## 9. plot curve
+-- 8. split folder
+
+-- 9. plot curve
+
+-- 10. crop
+
+-- 11. batch resize
