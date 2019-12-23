@@ -1,22 +1,25 @@
+# -*- coding: utf-8 -*-
+# @Time    : 8/7/19 10:32 AM
+# @Author  : luolu
+# @Email   : argluolu@gmail.com
+# @File    : extension_rename.py
+# @Software: PyCharm
+
 import os
 
 
 class BatchRename:
     def __init__(self):
-        self.path = '/home/xkjs/Downloads/data/BoPian/阿布扎比薄片照片/Habshan/image/'
+        self.path = '/home/xkjs/Desktop/image/'
 
     def rename(self):
         filelist = os.listdir(self.path)
         total_num = len(filelist)
         i = 0
         for item in filelist:
-            if item.endswith('.tif'):
-            # if item.__contains__("煤层"):
+            if item.endswith('.JPG'):
                 src = os.path.join(os.path.abspath(self.path), item)
-                if i < 10:
-                    dst = os.path.join(os.path.abspath(self.path), 'luolu_0000' + str(i) + '.jpg')
-                else:
-                    dst = os.path.join(os.path.abspath(self.path), 'luolu_000' + str(i) + '.jpg')
+                dst = os.path.join(os.path.abspath(self.path),  item.replace('JPG', 'jpg'))
                 try:
                     os.rename(src, dst)
                     print('converting %s to %s ...' % (src, dst))
